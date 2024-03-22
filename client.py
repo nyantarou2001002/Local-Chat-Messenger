@@ -22,7 +22,7 @@ try:
 
     try:
         while True:
-            data = str(sock.recv(32))
+            data = sock.recv(32)
 
             if data:
                 print(data.decode('utf-8'))
